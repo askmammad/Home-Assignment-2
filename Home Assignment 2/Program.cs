@@ -6,9 +6,9 @@ namespace Program
         public int RemainderFunc(int a, int b)
         {
             if (b == 0)
-                throw new Exception("Second number cannot be zero! Cannot divide by zero!");
+                throw new Exception("Ikinci eded sifir ola bilmez! Sifira bolune bilmez!");
             if (a < b)
-                throw new Exception("Number cannot be less than the divisor!");
+                throw new Exception("Birinci eded bolunecek ikinci ededden az ola bilmez!");
             else
                 return (a % b);
         }
@@ -16,13 +16,13 @@ namespace Program
         {
             int a, b;
             int remainder;
-            Console.Write("Enter first number: ");
+            Console.Write("Birinci ededi daxil edin: ");
             a = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter second number: ");
+            Console.Write("Ikinci ededi daxil edin: ");
             b = Convert.ToInt32(Console.ReadLine());
             Demo d = new Demo();
             remainder = d.RemainderFunc(a, b); ;
-            Console.WriteLine("Remainder is: {0}", remainder);
+            Console.WriteLine("Qaliq beraberdir: {0}", remainder);
         }
     }
 }
